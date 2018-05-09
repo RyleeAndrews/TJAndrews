@@ -34,7 +34,7 @@ app.use(require('../lib/middleware/error'));
 module.exports = {
 
   start: (port) => {
-    let usePort = port || process.env.PORT;
+    let usePort = process.env.PORT;
     if ( isRunning ) {
       throw Error ("Server is already running");
     }
