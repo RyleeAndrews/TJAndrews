@@ -6,4 +6,4 @@ const cors = require('cors');
 require('dotenv').load();
 mongoose.Promise = require('bluebird');
 mongoose.connect(process.env.MONGODB_URI);
-require('../server/lib/server.js').start();
+require('./server/lib/server.js').start();
